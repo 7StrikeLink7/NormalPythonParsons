@@ -52,7 +52,7 @@ The text in between the brackets get displayed to you.
 
 ### Example Next Link
 [Next](./parsons/example1.html)
-
+[
 ## Topics:
 [Outputs](./parsons/outputs.html)
 [Variables and Outputs](./parsons/variables.html)
@@ -71,7 +71,7 @@ The text in between the brackets get displayed to you.
 [Arrays/Lists]
 [2D Lists]
 [File handling]
-[Subprograms(functions/procedures)]
+[Subprograms(functions/procedures)]](https://github.com/7StrikeLink7/EasyPythonParsons/blob/master/_layouts/page.html)
  
 
  
