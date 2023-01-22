@@ -55,7 +55,7 @@ The text in between the brackets get displayed to you.
 
 ## Topics:
 [Outputs](./parsons/outputs.html)
-[Variables and Outputs]
+[Variables and Outputs](./parsons/variables.html)
 [Variables, Outputs, and Inputs ]
 [Maths Operators (input integers)]
 [Random numbers]
@@ -72,8 +72,6 @@ The text in between the brackets get displayed to you.
 [2D Lists]
 [File handling]
 [Subprograms(functions/procedures)]
-
- 
  
 
  
