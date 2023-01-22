@@ -13,10 +13,10 @@ title: Inputs
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;Ah yes. Agent 00&quot;+ myNumber, myName + &quot;. Good luck with the mission.&quot;)\n" +
-    "myName = input(&quot;Enter your name: &quot;)\n" +
+  var initial = "myName = input(&quot;Enter your name: &quot;)\n" +
     "print(&quot;Welcome, Agent&quot;, myName +&quot;. The keys to the Ferrari are here for you.&quot;)\n" +
-    "myNumber = input(&quot;What agent number were you again? &quot;)";
+    "myNumber = input(&quot;What agent number were you again? &quot;)\n" +
+    "print(&quot;Ah yes. Agent 00&quot;+ myNumber, myName + &quot;. Good luck with the mission.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
     "max_wrong_lines": 0,
@@ -40,7 +40,6 @@ title: Inputs
   }); 
 })(); 
 </script>
-
 ## Topics:
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
