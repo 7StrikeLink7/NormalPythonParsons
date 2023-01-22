@@ -43,7 +43,7 @@
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
 [Variables, Outputs, and Inputs](./Inputs.html)
-[Maths Operators (input integers)](./Inputs.html)
+[Maths Operators (input integers)](./Maths.html)
 [Random numbers](./Random.html)
 [Strings and Casting](./Casting.html)
 [Booleans](./Booleans.html)
