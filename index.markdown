@@ -52,26 +52,25 @@ The text in between the brackets get displayed to you.
 
 ### Example Next Link
 [Next](./parsons/example1.html)
-[
 ## Topics:
-[Outputs](./parsons/outputs.html)
-[Variables and Outputs](./parsons/variables.html)
-[Variables, Outputs, and Inputs ]
-[Maths Operators (input integers)]
-[Random numbers]
-[Strings and Casting]
-[Booleans]
-[If]
-[If/Else]
-[If/Elif/Else]
-[Nested Ifs]
-[For loops]
-[While loops]
-[Nested loops]
-[Arrays/Lists]
-[2D Lists]
-[File handling]
-[Subprograms(functions/procedures)]](https://github.com/7StrikeLink7/EasyPythonParsons/blob/master/_layouts/page.html)
+[Outputs](./parsons/Outputs.html)
+[Variables and Outputs](./parsons/Variables.html)
+[Variables, Outputs, and Inputs](./parsons/Inputs.html)
+[Maths Operators (input integers)](./parsons/Inputs.html)
+[Random numbers](./parsons/Random.html)
+[Strings and Casting](./parsons/Casting.html)
+[Booleans](./parsons/Booleans.html)
+[If](./parsons/If.html)
+[If/Else](./parsons/Else.html)
+[If/Elif/Else](./parsons/Elif.html)
+[Nested Ifs](./parsons/NestedIf.html)
+[For loops](./parsons/For.html)
+[While loops](./parsons/While.html)
+[Nested loops](./parsons/NestedLoops.html)
+[Arrays/Lists](./parsons/Arrays.html)
+[2D Lists](./parsons/2D.html)
+[File handling](./parsons/Files.html)
+[Subprograms(functions/procedures)](./parsons/Subprograms.html)
  
 
  
