@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Variables
+---
  
 ![image](https://user-images.githubusercontent.com/68385109/213943796-df7dfd55-fb2f-4d77-95ef-c7ba82a626e3.png)
 
