@@ -1,4 +1,4 @@
-# Variables, Outputs, and Inputs 
+
 ![image](https://user-images.githubusercontent.com/68385109/213944552-0bd0947a-3b9b-4d7e-ac12-1819fe7eb678.png)
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
@@ -42,7 +42,7 @@
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
 [Variables, Outputs, and Inputs](./Inputs.html)
-[Maths Operators (input integers)](./Inputs.html)
+[Maths Operators (input integers)](./Maths.html)
 [Random numbers](./Random.html)
 [Strings and Casting](./Casting.html)
 [Booleans](./Booleans.html)
