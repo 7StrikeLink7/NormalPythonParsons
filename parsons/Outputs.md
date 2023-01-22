@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Outputs
+---
 ![image](https://user-images.githubusercontent.com/68385109/213943936-ea88d7cd-6b0d-4013-89e5-85c071c5a4ff.png)
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
