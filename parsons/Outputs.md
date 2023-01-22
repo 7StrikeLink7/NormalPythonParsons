@@ -1,4 +1,5 @@
 # Easy Parsons: Outputs
+![image](https://user-images.githubusercontent.com/68385109/213943936-ea88d7cd-6b0d-4013-89e5-85c071c5a4ff.png)
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
@@ -37,21 +38,22 @@
 })(); 
 </script>
 
-[Outputs]
-[Variables and Outputs]
-[Variables, Outputs, and Inputs ]
-[Maths Operators (input integers)]
-[Random numbers]
-[Strings and Casting]
-[Booleans]
-[If]
-[If/Else]
-[If/Elif/Else]
-[Nested Ifs]
-[For loops]
-[While loops]
-[Nested loops]
-[Arrays/Lists]
-[2D Lists]
-[File handling]
-[Subprograms(functions/procedures)]
+## Topics:
+[Outputs](./parsons/Outputs.html)
+[Variables and Outputs](./parsons/Variables.html)
+[Variables, Outputs, and Inputs](./parsons/Inputs.html)
+[Maths Operators (input integers)](./parsons/Inputs.html)
+[Random numbers](./parsons/Random.html)
+[Strings and Casting](./parsons/Casting.html)
+[Booleans](./parsons/Booleans.html)
+[If](./parsons/If.html)
+[If/Else](./parsons/Else.html)
+[If/Elif/Else](./parsons/Elif.html)
+[Nested Ifs](./parsons/NestedIf.html)
+[For loops](./parsons/For.html)
+[While loops](./parsons/While.html)
+[Nested loops](./parsons/NestedLoops.html)
+[Arrays/Lists](./parsons/Arrays.html)
+[2D Lists](./parsons/2D.html)
+[File handling](./parsons/Files.html)
+[Subprograms(functions/procedures)](./parsons/Subprograms.html)
