@@ -5,10 +5,7 @@
 layout: default
 title: Multiple Parson's Problems on One Page
 ---
-
-
 ## Parsons Tutorial 
-
 Problem:
 Drag and re-arrange the blocks so to output: 
 
@@ -52,9 +49,33 @@ The text in between the brackets get displayed to you.
   }); 
 })(); 
 </script>
-## Parsons 2 (Variable Check Grader)
-Construct a program that swaps the values of variables <code>x</code> and <code>y</code> using the helper variable <code>tmp</code>. You can change the names of the variables (<span class="jsparson-toggle"></span>) by clicking them.
-
 
 ### Example Next Link
 [Next](./parsons/example1.html)
+
+## Topics:
+[Outputs]
+[Variables and Outputs]
+[Variables, Outputs, and Inputs ]
+[Maths Operators (input integers)]
+[Random numbers]
+[Strings and Casting]
+[Booleans]
+[If]
+[If/Else]
+[If/Elif/Else]
+[Nested Ifs]
+[For loops]
+[While loops]
+[Nested loops]
+[Arrays/Lists]
+[2D Lists]
+[File handling]
+[Subprograms(functions/procedures)]
+
+ 
+ 
+
+ 
+![image](https://user-images.githubusercontent.com/68385109/213919695-59481689-588f-4df1-8037-23c09f5bf6ac.png)
+
