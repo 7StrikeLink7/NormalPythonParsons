@@ -54,7 +54,7 @@ The text in between the brackets get displayed to you.
 [Next](./parsons/example1.html)
 
 ## Topics:
-[Outputs](./parsons/Outputs.html)
+[Outputs](./parsons/outputs.html)
 [Variables and Outputs]
 [Variables, Outputs, and Inputs ]
 [Maths Operators (input integers)]
