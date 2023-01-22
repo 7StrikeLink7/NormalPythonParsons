@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Inputs
+---
 ![image](https://user-images.githubusercontent.com/68385109/213944552-0bd0947a-3b9b-4d7e-ac12-1819fe7eb678.png)
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
