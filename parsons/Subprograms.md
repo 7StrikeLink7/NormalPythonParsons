@@ -2,7 +2,8 @@
 layout: default
 title: Subprograms (Functions and Procedures)
 ---
-Function: number * 5
+
+
 ![image](https://user-images.githubusercontent.com/68385109/216831487-2ea5d97f-ca89-4788-8d74-595a7edddb20.png)
 ![image](https://user-images.githubusercontent.com/68385109/216831585-84be1f59-bfce-4b00-9c82-828e973c5737.png)
 
@@ -42,7 +43,7 @@ Function: number * 5
 })(); 
 </script>
 
-Procedure: The 5 on a dice
+
 ![image](https://user-images.githubusercontent.com/68385109/216831738-bc7175e5-1360-4d00-b2f7-03ed00284e29.png)
 ![image](https://user-images.githubusercontent.com/68385109/216831731-692b7310-cc28-477b-ad1f-643e26dccabf.png)
 <div id="0-sortableTrash" class="sortable-code"></div> 
