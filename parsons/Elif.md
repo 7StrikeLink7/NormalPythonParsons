@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Selection – IF Elif Else: Menu Select!
+title: Selection – IF Elif Else statements - Menu Select
 ---
 
 ![image](https://user-images.githubusercontent.com/68385109/214693957-e05079c1-1365-4968-ae00-cddd0052c67d.png)
