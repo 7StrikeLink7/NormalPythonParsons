@@ -46,12 +46,12 @@ title: Subprograms (Functions and Procedures)
 
 ![image](https://user-images.githubusercontent.com/68385109/216831738-bc7175e5-1360-4d00-b2f7-03ed00284e29.png)
 ![image](https://user-images.githubusercontent.com/68385109/216831731-692b7310-cc28-477b-ad1f-643e26dccabf.png)
-<div id="0-sortableTrash" class="sortable-code"></div> 
-<div id="0-sortable" class="sortable-code"></div> 
+<div id="1-sortableTrash" class="sortable-code"></div> 
+<div id="1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="0-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="0-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="1-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -66,7 +66,7 @@ title: Subprograms (Functions and Procedures)
     "#Main Program\n" +
     "five()";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "0-sortable",
+    "sortableId": "1-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -74,15 +74,15 @@ title: Subprograms (Functions and Procedures)
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "trashId": "1-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#0-newInstanceLink").click(function(event){ 
+  $("#1-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#0-feedbackLink").click(function(event){ 
+  $("#1-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
