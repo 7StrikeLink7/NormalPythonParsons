@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Selection – IF Else: Storytelling!
+title: Selection – IF Else statements - Storytelling
 
 ---
 ![image](https://user-images.githubusercontent.com/68385109/214693474-63e8a41b-f592-4abe-add2-d1199817c42a.png)
