@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Selection – IF: Favourite Movie!
+title: Selection – If statements - Favourite Movie
 
 ---
 
-![image](https://user-images.githubusercontent.com/68385109/214692911-dbfb1951-a214-4bca-ba09-011477e3da3e.png)
+
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
