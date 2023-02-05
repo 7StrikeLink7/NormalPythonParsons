@@ -50,8 +50,7 @@ The text in between the brackets get displayed to you.
 })(); 
 </script>
 
-### Example Next Link
-[Next](./parsons/example1.html)
+
 ## Topics:
 [Outputs](./parsons/Outputs.html)
 [Variables and Outputs](./parsons/Variables.html)
