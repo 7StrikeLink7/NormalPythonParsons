@@ -1,10 +1,9 @@
 ---
 layout: default
-title: While Loops
+title: While Loops - Cracking the safe
 ---
 
-![image](https://user-images.githubusercontent.com/68385109/216828984-ef07ed4c-5f72-4b19-a56e-639ba8542aa2.png)
-![image](https://user-images.githubusercontent.com/68385109/216829027-63c2424e-cf21-4ea4-a60b-4a6dc539d707.png)
+![image](https://user-images.githubusercontent.com/68385109/232052965-66468b10-030b-40a0-a80e-9de1964ec71f.png)
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
@@ -15,13 +14,22 @@ title: While Loops
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "#The order of the code has been mixed up. Rearrange it so that it makes sense.\n" +
-    "annoyed = input(&quot;Are you annoyed? y/n &quot;)\n" +
-    "counter = 1\n" +
-    "while (annoyed != &quot;y&quot;):\n" +
-    "  counter = counter + 1  \n" +
-    "  annoyed = input(&quot;Are you annoyed yet? y/n &quot;)\n" +
-    "print(&quot;Finaly! I said it&quot;, counter, &quot;times!&quot;)\n" +
+  var initial = "print(&quot;Agent, the safe is behind the painting.&quot;)\n" +
+    "attempts = 3\n" +
+    "secretPassword = &quot;Skyfall&quot;\n" +
+    "myGuess = &quot;&quot;\n" +
+    "while (attempts &gt; 0) and (myGuess != secretPassword):\n" +
+    "  print(&quot;Safe: Enter the password&quot;)\n" +
+    "  myGuess = input()\n" +
+    "  if ($$toggle::myGuess$$ == secretPassword):\n" +
+    "    print(&quot;The safe has been opened. Good job agent.&quot;)\n" +
+    "    \n" +
+    "  else:\n" +
+    "    print(&quot;Incorrect.&quot;)\n" +
+    "    attempts = $$toggle::attempts$$ - 1\n" +
+    "    print(&quot;Attempts Remaining: &quot;, attempts)\n" +
+    "print(&quot;Time to go.&quot;)\n" +
+    "  \n" +
     "  ";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
@@ -31,8 +39,7 @@ title: While Loops
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
