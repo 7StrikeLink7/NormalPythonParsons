@@ -3,9 +3,10 @@ layout: default
 title: Random Numbers
 ---
 
-![image](https://user-images.githubusercontent.com/68385109/214690835-6015beab-9903-491f-81ec-4b4f058b7657.png)
+![image](https://user-images.githubusercontent.com/68385109/232032601-407a37b2-f70a-40c0-9300-15cb6cf6c80f.png)
 
- <div id="0-sortableTrash" class="sortable-code"></div> 
+
+<div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
@@ -14,20 +15,20 @@ title: Random Numbers
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "import random\n" +
+  var initial = "#Generating a random number\n" +
+    "import random\n" +
     "randomNumber = random.randint(1,6)\n" +
     "print(&quot;Rolling a 6 sided dice:&quot;)\n" +
     "print(randomNumber)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -41,7 +42,6 @@ title: Random Numbers
   }); 
 })(); 
 </script>
- 
 ## Topics:
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
