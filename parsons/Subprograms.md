@@ -4,9 +4,8 @@ title: Subprograms (Functions and Procedures)
 ---
 
 
-![image](https://user-images.githubusercontent.com/68385109/216831487-2ea5d97f-ca89-4788-8d74-595a7edddb20.png)
-![image](https://user-images.githubusercontent.com/68385109/216831585-84be1f59-bfce-4b00-9c82-828e973c5737.png)
-
+Random Item Procedure:
+![image](https://user-images.githubusercontent.com/68385109/232054704-22003b28-fd77-4b89-b1f8-aee4f674a0ee.png)
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -16,9 +15,25 @@ title: Subprograms (Functions and Procedures)
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "def timesFiveFunction(number):\n" +
-    "  return number * 5\n" +
-    "print(timesFiveFunction(3))";
+  var initial = "import random\n" +
+    "superRareItem = 3\n" +
+    "rareItem = 43\n" +
+    "def pullItem():\n" +
+    "  randomNumber = $$toggle::random$$.randint(0,100)\n" +
+    "  print(randomNumber)\n" +
+    "  #if random number is equal or lower than the number for super rare item\n" +
+    "  if (randomNumber &lt;= superRareItem):\n" +
+    "    print(&quot;You pulled a Super Rare Item! :D&quot;)\n" +
+    "  # otherwise check random number between the values of super rare and rare item\n" +
+    "  elif (randomNumber &gt; superRareItem) and (randomNumber &lt;= rareItem):\n" +
+    "    print(&quot;you pulled a rare item!&quot;)\n" +
+    "    \n" +
+    "  #Else, any other number is a common item\n" +
+    "  else:\n" +
+    "    print(&quot;you pulled a common item.&quot;)\n" +
+    " \n" +
+    "#Main Body: calling the procedure\n" +
+    "pullItem()";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
     "max_wrong_lines": 10,
@@ -27,8 +42,7 @@ title: Subprograms (Functions and Procedures)
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -83,6 +97,48 @@ title: Subprograms (Functions and Procedures)
       parsonsPuzzle.shuffleLines(); 
   }); 
   $("#1-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
+Function:
+![image](https://user-images.githubusercontent.com/68385109/232055635-c7a8c1f1-e68a-4f7f-85e7-24619990b072.png)
+<div id="2-sortableTrash" class="sortable-code"></div> 
+<div id="2-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="2-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="2-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "#Creating a function to reverse your input\n" +
+    "def reverseSentence(name):\n" +
+    "  reversed = name[::-1]\n" +
+    "  return reversed\n" +
+    "#Main body\n" +
+    "myName = input(&quot;What is your name? &quot;)\n" +
+    "print(&quot;Your name backwards is:&quot;, reverseSentence(myName))\n" +
+    "  ";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "2-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#2-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#2-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
