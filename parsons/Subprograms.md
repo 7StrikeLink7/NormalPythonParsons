@@ -104,7 +104,8 @@ Random Item Procedure:
 </script>
 
 Function:
-![image](https://user-images.githubusercontent.com/68385109/232055635-c7a8c1f1-e68a-4f7f-85e7-24619990b072.png)
+![image](https://user-images.githubusercontent.com/68385109/232056410-ef1f6845-3657-41c0-ad58-e81b52132dbf.png)
+
 <div id="2-sortableTrash" class="sortable-code"></div> 
 <div id="2-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
