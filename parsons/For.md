@@ -44,12 +44,12 @@ title: For Loops - Byte to Bits
 ![image](https://user-images.githubusercontent.com/68385109/232052058-2324731a-746e-4c43-a050-6bd8c4b78088.png)
 
 
-<div id="0-sortableTrash" class="sortable-code"></div> 
-<div id="0-sortable" class="sortable-code"></div> 
+<div id="1-sortableTrash" class="sortable-code"></div> 
+<div id="1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="0-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="0-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="1-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
