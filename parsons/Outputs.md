@@ -1,8 +1,11 @@
 ---
 layout: default
-title: Outputs
+title: Output - Story
 ---
-![image](https://user-images.githubusercontent.com/68385109/213943936-ea88d7cd-6b0d-4013-89e5-85c071c5a4ff.png)
+
+
+![image](https://user-images.githubusercontent.com/68385109/232026906-d829b2c6-3007-4647-ad24-56be42c432d5.png)
+
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
@@ -13,20 +16,19 @@ title: Outputs
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "print(&quot;First, read all the lines.&quot;)\n" +
-    "print(&quot;Second, Cut and Copy lines into the right order.&quot;)\n" +
-    "print(&quot;Third, take a screenshot.&quot;)\n" +
-    "print(&quot;Lastly, give yourself a pat on the back.&quot;)";
+  var initial = "print(&quot;Today, I went to the shops.&quot;)\n" +
+    "print(&quot;I bought some sweets.&quot;)\n" +
+    "print(&quot;Chocolate too.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
-    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.VariableCheckGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "vartests": []
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -40,7 +42,6 @@ title: Outputs
   }); 
 })(); 
 </script>
-
 ## Topics:
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
