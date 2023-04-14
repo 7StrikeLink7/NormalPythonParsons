@@ -2,9 +2,11 @@
 layout: default
 title: Casting
 ---
-![image](https://user-images.githubusercontent.com/68385109/214691799-d95fcd8b-7c21-4677-97bf-4066100c6d63.png)
 
- <div id="0-sortableTrash" class="sortable-code"></div> 
+![image](https://user-images.githubusercontent.com/68385109/232034022-87076440-ff77-4fac-a0db-3c450fa9e0c4.png)
+
+
+<div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
@@ -13,21 +15,20 @@ title: Casting
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "myVariable = &quot;5&quot;\n" +
-    "print(&quot;myVariable is a string: &quot; + myVariable)\n" +
-    "print(&quot;Concatenating by itself gives: &quot; + myVariable + myVariable)\n" +
-    "myVariable = int(myVariable)\n" +
-    "print(&quot;Now it is an integer by using int(). Adding by itself gives:&quot;, myVariable + myVariable)";
+  var initial = "parrotPhrase = &quot;Ello ello ello!&quot;\n" +
+    "parrotFavouriteNumber = &quot;5&quot;\n" +
+    "print(&quot;My annoying parrot repeated his favourite phrase:&quot;, parrotPhrase, &quot;,&quot;,parrotFavouriteNumber, &quot;times this morning. That&#039;s his favourite number...&quot;)\n" +
+    "myFavouriteNum = int(input(&quot;My favourite number is: &quot;))\n" +
+    "print(&quot;Sqwark squark! I can say that&quot; + str($$toggle::myFavouriteNum$$) + &quot;times! That is MY favourite number!&quot; )";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
