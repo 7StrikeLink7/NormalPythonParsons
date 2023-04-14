@@ -60,7 +60,7 @@ title: For Loops - Byte to Bits
     "  print(&quot;there are&quot;, x-1, &quot;bottles of milk on the wall!&quot;)\n" +
     "  print() # New line ";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "0-sortable",
+    "sortableId": "1-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -71,11 +71,11 @@ title: For Loops - Byte to Bits
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#0-newInstanceLink").click(function(event){ 
+  $("#1-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#0-feedbackLink").click(function(event){ 
+  $("#1-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
