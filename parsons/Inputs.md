@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Inputs
+title: Inputs - Asking for name and age
 ---
-![image](https://user-images.githubusercontent.com/68385109/213944552-0bd0947a-3b9b-4d7e-ac12-1819fe7eb678.png)
 
+![image](https://user-images.githubusercontent.com/68385109/232029769-c3676f15-629a-44af-a13f-e5a7a03dae87.png)
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -13,20 +13,21 @@ title: Inputs
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "myName = input(&quot;Enter your name: &quot;)\n" +
-    "print(&quot;Welcome, Agent&quot;, myName +&quot;. The keys to the Ferrari are here for you.&quot;)\n" +
-    "myNumber = input(&quot;What agent number were you again? &quot;)\n" +
-    "print(&quot;Ah yes. Agent 00&quot;+ myNumber, myName + &quot;. Good luck with the mission.&quot;)";
+  var initial = "#Asking user&#039;s name\n" +
+    "myName = input(&quot;What is your name? &quot;)\n" +
+    "#Asking user&#039;s age\n" +
+    "myAge = input(&quot;How old are you? &quot;)\n" +
+    "#Display name and age\n" +
+    "print(&quot;Wow &quot; + myName + &quot;! You are &quot; + myAge + &quot;!&quot;) ";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -40,6 +41,8 @@ title: Inputs
   }); 
 })(); 
 </script>
+
+
 ## Topics:
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
