@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Selection – IF Elif Else statements - Menu Select
+title: Selection – IF Elif Else statements - Name Length
 ---
 
-![image](https://user-images.githubusercontent.com/68385109/214693957-e05079c1-1365-4968-ae00-cddd0052c67d.png)
-
- <div id="0-sortableTrash" class="sortable-code"></div> 
+![image](https://user-images.githubusercontent.com/68385109/232047208-f73d077b-27d4-480b-a28d-4dcad97b33a2.png)
+<div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
@@ -14,33 +13,25 @@ title: Selection – IF Elif Else statements - Menu Select
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "#Display menu\n" +
-    "print(&quot;Menu:&quot;)\n" +
-    "print(&quot;a. Start&quot;)\n" +
-    "print(&quot;b. Load&quot;)\n" +
-    "print(&quot;c. Settings&quot;)\n" +
-    "userChoice = input(&quot;Enter a corresponding letter for what you want to do: &quot;)\n" +
-    "userChoice = userChoice.lower() #making input into lowercase\n" +
-    "#Display scenario from user&#039;s choice\n" +
-    "if (userChoice == &quot;a&quot;):\n" +
-    "  print(&quot;Starting Game&quot;)\n" +
-    "elif(userChoice == &quot;b&quot;):\n" +
-    "  print(&quot;Loading save file&quot;)\n" +
-    "elif(userChoice == &quot;c&quot;):\n" +
-    "  print(&quot;This is the settings&quot;)\n" +
+  var initial = "print(&quot;Hello mortal, I am pythongarobtrabatron v11112.&quot;)\n" +
+    "name = input(&quot;What is your name? &quot;)\n" +
+    "nameLength = len(name)\n" +
+    "#Output different responses depending on name length\n" +
+    "if nameLength &lt; 4: \n" +
+    "  print(&quot;Wow, you have a short name!&quot;)\n" +
+    "elif (nameLength &gt;= 4 and nameLength &lt; 7):\n" +
+    "  print(&quot;I think that is an average length name!&quot;)\n" +
     "else:\n" +
-    "  print(&quot;Sorry try again.&quot;)\n" +
-    "  ";
+    "  print(&quot;What a long name!&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -54,6 +45,7 @@ title: Selection – IF Elif Else statements - Menu Select
   }); 
 })(); 
 </script>
+
 ## Topics:
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
