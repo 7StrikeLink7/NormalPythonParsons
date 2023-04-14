@@ -3,10 +3,7 @@ layout: default
 title: Arrays - Class Register
 ---
 
-![image](https://user-images.githubusercontent.com/68385109/216831056-553c3f26-7bdd-49db-b8c2-9af70aa4f964.png)
-
-![image](https://user-images.githubusercontent.com/68385109/216831048-178c5024-611b-42c5-80d1-47c99c2679dd.png)
-
+![image](https://user-images.githubusercontent.com/68385109/232053420-63eec7a6-cdd4-4cb8-814f-23c2dcfb4c44.png)
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -16,9 +13,12 @@ title: Arrays - Class Register
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "students = [ &quot;John&quot;, &quot;Bill&quot;, &quot;Pete&quot;, &quot;Dave&quot; ]\n" +
-    "students.append(&quot;Mark&quot;)\n" +
-    "print(students)";
+  var initial = "classRegister = [&quot;Anna&quot;, &quot;Barbie&quot;, &quot;Charlie&quot;, &quot;Daniel&quot;, &quot;Ellie&quot;]\n" +
+    "newStudent = input(&quot;We have a new student whose name is: &quot;)\n" +
+    "classRegister.append(newStudent)\n" +
+    "for name in classRegister:\n" +
+    "  print(name)\n" +
+    "  print(&quot; \&quot;Here!\&quot; &quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
     "max_wrong_lines": 10,
@@ -27,8 +27,7 @@ title: Arrays - Class Register
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
