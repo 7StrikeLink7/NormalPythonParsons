@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Boolean – Money Comparisonleans
+title: Boolean 
 ---
 
-Write a program that has two variables: myWallet and yourWallet with different integer values.
-Then compare the two, to find out if myWallet has more money than yourWallet, then find out if they contain the same amount.
- 
+
+![image](https://user-images.githubusercontent.com/68385109/232034832-bf27d62a-da0b-418a-9945-63b1eff33086.png)
 
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
@@ -16,21 +15,18 @@ Then compare the two, to find out if myWallet has more money than yourWallet, th
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "myWallet = 10000\n" +
-    "yourWallet = 10\n" +
-    "print(&quot;I\&#039;m going to compare our wallet sizes.&quot;)\n" +
-    "print(&quot;Does my wallet contain more money than yours? It is&quot;, myWallet &gt; yourWallet)\n" +
-    "print(&quot;Do we have the same amount? It is&quot;, myWallet == yourWallet)";
+  var initial = "num1 = int(input(&quot;Enter a number: &quot;))\n" +
+    "print(&quot;Is your number bigger than 50? &quot;)\n" +
+    "print(num1 &gt; 50)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
