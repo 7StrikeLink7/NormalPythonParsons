@@ -3,9 +3,9 @@ layout: default
 title: Maths
 ---
 
-![image](https://user-images.githubusercontent.com/68385109/213945998-6c6339aa-11ae-46f6-85e2-a4da0dca6e26.png)
 
- <div id="0-sortableTrash" class="sortable-code"></div> 
+![image](https://user-images.githubusercontent.com/68385109/232031143-2f5df1b4-e07d-4a97-b909-b24820650356.png)
+<div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
@@ -14,22 +14,19 @@ title: Maths
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "num1 = int(input(&quot;Enter a number: &quot;))\n" +
-    "num2 = int(input(&quot;Enter a second number: &quot;))\n" +
-    "num3 = int(input(&quot;Enter a third number: &quot;))\n" +
-    "num4 = int(input(&quot;Enter a fourth number: &quot;))\n" +
-    "print(&quot;Your first number + 2nd number * 3rd number / fourth number =&quot;)\n" +
-    "print((num1 + num2) * num3 / num4)";
+  var initial = "#Number addition\n" +
+    "myAge = 10\n" +
+    "print(&quot;I am&quot;, myAge, &quot;years old.&quot;)\n" +
+    "print(&quot;In ten years, I would be&quot;, myAge+10, &quot;years old.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -43,7 +40,8 @@ title: Maths
   }); 
 })(); 
 </script>
- 
+
+
  
 ## Topics:
 [Outputs](./Outputs.html)
