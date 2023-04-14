@@ -1,42 +1,39 @@
 ---
 layout: default
-title: For Loops
+title: For Loops - Byte to Bits
 ---
-![image](https://user-images.githubusercontent.com/68385109/216828910-d0195ac4-9a37-4fe3-93da-97b258f137a1.png)
-![image](https://user-images.githubusercontent.com/68385109/216828850-6c7af779-b5aa-4b23-bcea-375e9d9efd5a.png)
 
-
-<div id="sortableTrash" class="sortable-code"></div> 
-<div id="sortable" class="sortable-code"></div> 
+![image](https://user-images.githubusercontent.com/68385109/232051020-353bbbd9-0197-4c82-9855-ffd8a86d8331.png)
+<div id="0-sortableTrash" class="sortable-code"></div> 
+<div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="0-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="0-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "countingUpTo = 100\n" +
-    "print(&quot;Time to count!&quot;)\n" +
-    "for i in range (0, countingUpTo):\n" +
-    "    print(i)";
+  var initial = "for i in range (0,10):\n" +
+    "  print(i*8, &quot;bits.&quot;)\n" +
+    "  print(i, &quot;bytes is &quot;, end =&quot;&quot; )\n" +
+    "  ";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "sortable",
+    "sortableId": "0-sortable",
     "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#newInstanceLink").click(function(event){ 
+  $("#0-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#feedbackLink").click(function(event){ 
+  $("#0-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
