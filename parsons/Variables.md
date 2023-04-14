@@ -1,46 +1,47 @@
 ---
 layout: default
-title: Variables
+title: Variables - Introduction
 ---
  
-![image](https://user-images.githubusercontent.com/68385109/213943796-df7dfd55-fb2f-4d77-95ef-c7ba82a626e3.png)
 
-<div id="0-sortableTrash" class="sortable-code"></div> 
-<div id="0-sortable" class="sortable-code"></div> 
+![image](https://user-images.githubusercontent.com/68385109/232027083-64cc72f5-0e0d-4f1a-8bd4-f68bc4aaf2ca.png)
+<div id="1-sortableTrash" class="sortable-code"></div> 
+<div id="1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="0-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="0-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="1-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
   var initial = "myName = &quot;John&quot;\n" +
-    "print(&quot;The variable myName takes the value of whaterver is to the right of the =.&quot;)\n" +
-    "print(&quot;Hello,&quot;, myName, &quot;!&quot;)\n" +
-    "print(&quot;Nice to meet you.&quot;)";
+    "numberOfSweets = 10\n" +
+    "print(&quot;My name is&quot;, myName) \n" +
+    "print(&quot;I bought some sweets.&quot;)\n" +
+    "print(&quot;I have&quot;, numberOfSweets, &quot;sweets.&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "sortableId": "1-sortable",
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#0-newInstanceLink").click(function(event){ 
+  $("#1-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#0-feedbackLink").click(function(event){ 
+  $("#1-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
 })(); 
 </script>
+
 ## Topics:
 [Outputs](./Outputs.html)
 [Variables and Outputs](./Variables.html)
