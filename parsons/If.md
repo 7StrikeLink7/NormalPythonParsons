@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Selection – If statements - Favourite Movie
+title: Selection – If statements - Your Number
 
 ---
 
-
+![image](https://user-images.githubusercontent.com/68385109/232034912-962d078d-02df-45b6-86ea-e7d0ab26336a.png)
 <div id="0-sortableTrash" class="sortable-code"></div> 
 <div id="0-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -14,23 +14,22 @@ title: Selection – If statements - Favourite Movie
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "favouriteMovie = input(&quot;What is your favourite movie? &quot;)\n" +
-    "if (favouriteMovie == &quot;Megamind&quot;):\n" +
-    "  print(&quot;That is my favourite movie too!&quot;)\n" +
-    "if (favouriteMovie == &quot;Twilight&quot;):\n" +
-    "  print(&quot;An interesting choice.&quot;)\n" +
-    "  \n" +
-    "print(&quot;Thanks for answering! Time for me to watch movie.&quot;)";
+  var initial = "num1 = int(input(&quot;Enter a number: &quot;))\n" +
+    "if(num1 &lt; 50):  #output the number is small if under 50\n" +
+    "  print(&quot;Awfully small number. Isn&#039;t it? &quot;)\n" +
+    "if(num1 == 77):  #If the number is 77\n" +
+    "  print(&quot;WOW! We thought of the same number!&quot;)\n" +
+    "print(&quot;Not a bad number overall.&quot;)\n" +
+    "  ";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
-    "max_wrong_lines": 0,
+    "max_wrong_lines": 10,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "0-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -44,7 +43,6 @@ title: Selection – If statements - Favourite Movie
   }); 
 })(); 
 </script>
- 
  
 ## Topics:
 [Outputs](./Outputs.html)
