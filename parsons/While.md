@@ -21,12 +21,12 @@ title: While Loops - Cracking the safe
     "while (attempts &gt; 0) and (myGuess != secretPassword):\n" +
     "  print(&quot;Safe: Enter the password&quot;)\n" +
     "  myGuess = input()\n" +
-    "  if ($$toggle::myGuess$$ == secretPassword):\n" +
+    "  if (myGuess == secretPassword):\n" +
     "    print(&quot;The safe has been opened. Good job agent.&quot;)\n" +
     "    \n" +
     "  else:\n" +
     "    print(&quot;Incorrect.&quot;)\n" +
-    "    attempts = $$toggle::attempts$$ - 1\n" +
+    "    attempts = attempts - 1\n" +
     "    print(&quot;Attempts Remaining: &quot;, attempts)\n" +
     "print(&quot;Time to go.&quot;)\n" +
     "  \n" +
