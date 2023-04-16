@@ -19,7 +19,7 @@ title: Casting
     "parrotFavouriteNumber = &quot;5&quot;\n" +
     "print(&quot;My annoying parrot repeated his favourite phrase:&quot;, parrotPhrase, &quot;,&quot;,parrotFavouriteNumber, &quot;times this morning. That&#039;s his favourite number...&quot;)\n" +
     "myFavouriteNum = int(input(&quot;My favourite number is: &quot;))\n" +
-    "print(&quot;Sqwark squark! I can say that&quot; + str($$toggle::myFavouriteNum$$) + &quot;times! That is MY favourite number!&quot; )";
+    "print(&quot;Sqwark squark! I can say that&quot; + str(myFavouriteNum) + &quot;times! That is MY favourite number!&quot; )";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "0-sortable",
     "max_wrong_lines": 10,
