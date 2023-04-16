@@ -19,7 +19,7 @@ Random Item Procedure:
     "superRareItem = 3\n" +
     "rareItem = 43\n" +
     "def pullItem():\n" +
-    "  randomNumber = $$toggle::random$$.randint(0,100)\n" +
+    "  randomNumber = random.randint(0,100)\n" +
     "  print(randomNumber)\n" +
     "  #if random number is equal or lower than the number for super rare item\n" +
     "  if (randomNumber &lt;= superRareItem):\n" +
